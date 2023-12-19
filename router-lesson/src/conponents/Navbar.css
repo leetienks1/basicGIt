@@ -1,0 +1,80 @@
+.active
+{
+    background-color: aquamarine;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f172a
+}
+nav .title
+{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    text-decoration: none;
+}
+nav ul li a
+{
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    margin : 0 0.5rem;
+    border-radius: 0.5rem;
+}
+nav ul li a:not(.active):hover
+{
+    background-color: gray;
+}
+ nav .menu
+{
+    display: none;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+    height: 2.25rem;
+    width: 2rem;
+    flex-direction: column;
+}
+.menu span
+{
+    display: block;
+    margin: 0.5rem 0;
+    background-color: beige;
+    height: 0.3rem;
+    width: 100%;
+    border-radius: 0.3rem;
+}
+
+@media (max-width: 500px)
+{
+    nav .menu{
+        display: block;
+    }
+    nav{
+        align-items: start;
+        flex-direction: column;
+    }
+    nav ul{
+        display: none;
+        padding-left: 0;
+
+    }
+    nav .open{
+        display: flex;
+    }
+}    
+    
+
+

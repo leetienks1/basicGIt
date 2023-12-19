@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+html {
+  font-size: 16px;
+}
+#root
+{
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.App
+{
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-shadow: 0px 0px 15px grey;
+  
+}
+.Header, .Footer
+{
+  width: 100%;
+  display: flex;
+  /* padding: 1rem; */
+  justify-content: space-between;
+  align-items: center;
+  background-color: aquamarine;
+}
+.Header h1
+{
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+.Header img
+{
+  width: 10rem;
+  height: 10rem;
+  padding: 0.2rem;
+  border-radius: 10rem;
+}
+.Footer
+{
+  display: grid;
+  place-content: center;
+}
+
+.Nav
+{
+  background-color: grey;
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: flex-start;
+  align-items: center;
+}
+.Nav .searchForm
+{
+  width: 80%;
+  padding: 1rem 0 0 0.75rem;
+}
+.searchForm label
+{
+  position: absolute;
+  left: -99999999999999px;
+}
+.searchForm input[type="text"]
+{width: 100%;
+  min-height: 48px;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  outline: none;
+
+}
+.Nav ul {
+  color: #fff;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  
+}
+.Nav li {
+  padding: 1rem;
+  width: 33.3333%;
+}
+
+
+.Nav li:hover, 
+.Nav li:focus {
+  padding: 1rem;
+}
+
+.Nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+.Nav li:hover, 
+.Nav li:focus, 
+.Nav li:hover a, 
+.Nav li:focus a  {
+  background-color: #eee;
+  color: #333;
+}
+
+.Nav li:hover a, 
+.Nav li:focus a {
+  cursor: pointer;
+}
+
+.home
+{
+  display: flex;
+  /* cho phpse xuống dòng khi không đủ không gian */
+  flex-wrap: wrap;
+  width: 100%;
+  /* justify-content: space-around; */
+  justify-content: center;
+  text-align: center;
+  flex-grow: 0;
+}
+.home .post
+{
+  width: 33.3333%;
+  border : 1px solid gray;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.post h2
+{
+  color: red;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.post .price
+{
+  color: orangered;
+  
+}
+.post .price a
+{
+  border: 1px solid gray;
+}
+
+button
+{
+  background-color: red;
+  color: white;
+  padding: 0.5rem 1rem ;
+  border-radius: 10px;
+}
+.newItem
+{
+  width: 100%;
+  
+}
+.addForm
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.titleInput, .titleBody, .titlePrice
+{
+  width: 60%;
+  height: 1.5rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  line-height: 1rem;
+}
+.titleBody
+{
+  height: 5rem;
+}
